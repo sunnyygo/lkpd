@@ -138,7 +138,8 @@ export default function HalamanGuru({ onBack }) {
 
       {data && daftar.length > 0 && (
         <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
-          <table className="w-full text-sm">
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[640px] text-sm">
             <thead>
               <tr className="bg-stone-100 text-left text-xs uppercase tracking-wide text-stone-500">
                 <th className="px-4 py-3">Nama</th>
@@ -173,6 +174,7 @@ export default function HalamanGuru({ onBack }) {
               ))}
             </tbody>
           </table>
+          </div>
         </div>
       )}
 
